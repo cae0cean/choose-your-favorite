@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Your Favorite Hirono</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #b03060;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d36c96;
+      margin-bottom: 20px;
+    }
+
+    .hirono-img {
+      width: 180px;
+      height: auto;
+      border-radius: 15px;
+      border: 3px solid #f4aeba;
+      margin: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .hirono-img:hover {
+      transform: scale(1.05);
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #a0526d;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Your Favorite Hirono</h1>
+
+  <img src="hirono1.jpg" alt="Hirono 1" class="hirono-img" onclick="showMessage()">
+  <img src="hirono2.jpg" alt="Hirono 2" class="hirono-img" onclick="showMessage()">
+  <img src="hirono3.jpg" alt="Hirono 3" class="hirono-img" onclick="showMessage()">
+  <img src="hirono1.jpg" alt="Hirono 1" class="hirono-img" onclick="showMessage()">
+  <img src="hirono2.jpg" alt="Hirono 2" class="hirono-img" onclick="showMessage()">
+  <img src="hirono3.jpg" alt="Hirono 3" class="hirono-img" onclick="showMessage()">
+
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "Yey pilihan yang bagus, Hirono memang selalu lucu!";
+    }
+  </script>
+</body>
+</html>

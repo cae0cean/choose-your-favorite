@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Favorite Hirono</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fefefe;
+      padding: 30px;
+    }
+    h1 {
+      color: #333;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #FF5722;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose Your Favorite Hirono</h1>
+
+  <div class="gallery">
+    <img src="hirono1.jpg" onclick="showMessage()">
+    <img src="hirono2.jpg" onclick="showMessage()">
+    <img src="hirono3.jpg" onclick="showMessage()">
+    <img src="hirono4.jpg" onclick="showMessage()">
+    <img src="hirono5.jpg" onclick="showMessage()">
+    <img src="hirono6.jpg" onclick="showMessage()">
+  </div>
+
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "Yey, pilihan yang bagus, Hirono memang selalu lucu";
+    }
+  </script>
+
+</body>
+</html>
